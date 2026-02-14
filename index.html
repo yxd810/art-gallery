@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="个人摄影与绘画作品展示平台">
+    <meta name="keywords" content="摄影,绘画,艺术,作品展示">
+    <title>艺术空间 | 摄影与绘画作品</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="navbar-brand">艺术空间</a>
+            <ul class="navbar-nav">
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="gallery.html">作品展示</a></li>
+                <li><a href="about.html">个人介绍</a></li>
+                <li><a href="contact.html">联系方式</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+        <!-- Hero区域 -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">艺术空间</h1>
+                <p class="hero-subtitle">捕捉光影之美，绘制心中世界</p>
+                <div class="hero-actions">
+                    <a href="gallery.html" class="btn btn-primary">
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+                        </svg>
+                        浏览作品
+                    </a>
+                    <a href="contact.html" class="btn">
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        联系我
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 精选作品 -->
+        <section class="container">
+            <div class="page-header">
+                <h2 class="page-title">精选作品</h2>
+                <p class="page-description">用心创作，用镜头和画笔记录美好瞬间</p>
+            </div>
+            <div class="grid grid-3" id="featured-works">
+                <!-- 作品将通过JavaScript动态加载 -->
+            </div>
+            <div class="text-center mt-md">
+                <a href="gallery.html" class="btn btn-primary">
+                    查看全部作品
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- 服务说明 -->
+        <section class="container" style="margin-top: var(--spacing-xxl);">
+            <div class="page-header">
+                <h2 class="page-title">服务说明</h2>
+                <p class="page-description">提供专业的艺术作品定制与交易服务</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-body" style="text-align: center;">
+                        <svg class="icon icon-xl" style="color: var(--color-accent); margin-bottom: var(--spacing-md);" viewBox="0 0 24 24">
+                            <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+                        </svg>
+                        <h3 class="card-title">摄影作品</h3>
+                        <p class="card-text">专业摄影师提供的高质量摄影作品，包括风景、人像、建筑等多种主题</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body" style="text-align: center;">
+                        <svg class="icon icon-xl" style="color: var(--color-accent); margin-bottom: var(--spacing-md);" viewBox="0 0 24 24">
+                            <path d="M7 14c-1.66 0-3 1.34-3 3 0 1.31-1.16 2-2 2 .92 1.22 2.49 2 4 2 2.21 0 4-1.79 4-4 0-1.66-1.34-3-3-3zm13.71-9.37l-1.34-1.34c-.39-.39-1.02-.39-1.41 0L9 12.25 11.75 15l8.96-8.96c.39-.39.39-1.02 0-1.41z"/>
+                        </svg>
+                        <h3 class="card-title">绘画作品</h3>
+                        <p class="card-text">原创绘画作品，涵盖油画、水彩、素描等多种风格，展现艺术家的独特视角</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body" style="text-align: center;">
+                        <svg class="icon icon-xl" style="color: var(--color-accent); margin-bottom: var(--spacing-md);" viewBox="0 0 24 24">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                        <h3 class="card-title">作品定制</h3>
+                        <p class="card-text">接受个性化作品定制，根据您的需求和想法创作独一无二的艺术作品</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-text">© 2024 艺术空间. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

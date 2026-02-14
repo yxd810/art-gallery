@@ -1,0 +1,52 @@
+{
+  "works": [
+    {
+      "filename": "sample6.jpg",
+      "title": "山葵的猫咪",
+      "category": "painting",
+      "description": "一只顽皮的猫。作者用油画笔法描绘出一只顽皮的小猫捕食的霎那。作品运用了动静结合的表现手法，使画面充满张力。",
+      "price": 2000,
+      "date": "2024-03"
+    },
+    {
+      "filename": "sample5.jpg",
+      "title": "春日印象",
+      "category": "painting",
+      "description": "用油画技法描绘春天的美好，鲜花盛开的场景充满生机与希望。作品运用了印象派的光影表现手法。",
+      "price": 1500,
+      "date": "2024-03"
+    },
+    {
+      "filename": "sample4.jpg",
+      "title": "神奇自然",
+      "category": "photography",
+      "description": "大自然的神奇，展现了自然界的壮丽与神秘。长曝光拍摄展现出千百年风蚀岩壁形成的韵动。",
+      "price": 3000,
+      "date": "2024-02"
+    },
+    {
+      "filename": "sample3.jpg",
+      "title": "早餐",
+      "category": "painting",
+      "description": "清晨的阳光照射在餐盘上，令人垂涎。这幅作品通过描绘食物展现了宁静而美好的清晨时光。",
+      "price": 5000,
+      "date": "2024-01"
+    },
+    {
+      "filename": "sample2.jpg",
+      "title": "sample2",
+      "category": "painting",
+      "description": "花卉。作品运用了厚重的笔触和鲜艳的色彩，展现出自然的蓬勃生命力。",
+      "price": 2000,
+      "date": "2026-02"
+    },
+    {
+      "filename": "sample1.jpg",
+      "title": "sample1",
+      "category": "photography",
+      "description": "云海。作品通过长时间曝光拍摄，展现了云海的壮丽与神秘，仿佛置身于仙境之中。",
+      "price": 1000,
+      "date": "2026-02"
+    }
+  ]
+}

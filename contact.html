@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="联系方式">
+    <title>联系方式 | 艺术空间</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="navbar-brand">艺术空间</a>
+            <ul class="navbar-nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="gallery.html">作品展示</a></li>
+                <li><a href="about.html">个人介绍</a></li>
+                <li><a href="contact.html" class="active">联系方式</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+        <div class="page-header">
+            <h1 class="page-title">联系方式</h1>
+            <p class="page-description">期待与您的合作与交流</p>
+        </div>
+
+        <div class="container">
+            <div class="grid grid-2" style="align-items: start;">
+                <!-- 联系信息 -->
+                <div>
+                    <h2 style="font-size: var(--font-size-xl); font-weight: 600; margin-bottom: var(--spacing-lg);">联系信息</h2>
+                    
+                    <div style="margin-bottom: var(--spacing-xl);">
+                        <div class="d-flex align-center" style="margin-bottom: var(--spacing-md);">
+                            <a href="mailto:artist@example.com" class="icon-button contact-email-link" style="width: 50px; height: 50px;">
+                                <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                </svg>
+                            </a>
+                            <div style="margin-left: var(--spacing-md);">
+                                <div style="font-size: var(--font-size-sm); color: var(--color-text-secondary);">电子邮箱</div>
+                                <div class="contact-email-display" style="font-size: var(--font-size-base); color: var(--color-text-primary);">artist@example.com</div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-center" style="margin-bottom: var(--spacing-md);">
+                            <a href="tel:+8613800138000" class="icon-button contact-phone-link" style="width: 50px; height: 50px;">
+                                <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24">
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                </svg>
+                            </a>
+                            <div style="margin-left: var(--spacing-md);">
+                                <div style="font-size: var(--font-size-sm); color: var(--color-text-secondary);">联系电话</div>
+                                <div class="contact-phone-display" style="font-size: var(--font-size-base); color: var(--color-text-primary);">+86 138 0013 8000</div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-center" style="margin-bottom: var(--spacing-md);">
+                            <a href="https://www.artistspace.com" class="icon-button contact-website-link" style="width: 50px; height: 50px;">
+                                <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                                </svg>
+                            </a>
+                            <div style="margin-left: var(--spacing-md);">
+                                <div style="font-size: var(--font-size-sm); color: var(--color-text-secondary);">官方网站</div>
+                                <div class="contact-website-display" style="font-size: var(--font-size-base); color: var(--color-text-primary);">www.artistspace.com</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 社交媒体 -->
+                    <h3 style="font-size: var(--font-size-lg); font-weight: 600; margin-bottom: var(--spacing-md);">社交媒体</h3>
+                    <div class="d-flex gap-md" style="flex-wrap: wrap;">
+                        <a href="#" class="social-link icon-button" data-platform="wechat" title="微信">
+                            <!--
+                            <svg style="width: 24px; height: 24px; fill: currentColor;" viewBox="0 0 24 24">
+                                <path d="M8 6h8v2H8V6zm0 4h8v2H8v-2zm-2 6h12v2H6v-2zM5 3h14c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2zm0 2v12h14V5H5z"/>
+                            </svg>
+                            -->
+                            <img src="images/wechat-icon.png" alt="wechat" style="width: 24px; height: 24px;">
+                        </a>
+                        <a href="#" class="social-link icon-button" data-platform="qq" title="QQ">
+                            <!--
+                            <svg style="width: 24px; height: 24px; fill: currentColor;" viewBox="0 0 24 24">
+                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z"/>
+                            </svg>
+                            -->
+                            <img src="images/QQ-ICON.png" alt="QQ" style="width: 24px; height: 24px;">
+                        </a>
+                        <a href="#" class="social-link icon-button" data-platform="weibo" title="新浪微博">
+                            <!---
+                            <svg viewBox="0 0 24 24">
+                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm3.3 14.71c-.38.19-.8.32-1.25.32-.97 0-1.79-.63-2.14-1.51-.22-.53-.22-1.11 0-1.64.36-.88 1.18-1.51 2.14-1.51.45 0 .87.13 1.25.32.19-.59.29-1.23.29-1.89 0-3.26-2.68-5.94-6.01-5.94-3.32 0-6.01 2.68-6.01 5.94 0 3.26 2.68 5.94 6.01 5.94.86 0 1.68-.18 2.44-.51-.01-.34-.02-.69.01-1.04-.27-.12-.52-.28-.73-.48zm2.14-2.85c.88-.39 1.5-1.27 1.5-2.29 0-1.38-1.12-2.5-2.5-2.5-.45 0-.87.12-1.25.33-.17.56-.28 1.15-.28 1.77 0 2.2 1.75 4 3.93 4.15-.21-.42-.33-.89-.33-1.39 0-.41.07-.8.21-1.17z"/>
+                            </svg>
+                            -->
+                            <img src="images/logo-sina.png" alt="weibo" style="width: 24px; height: 24px;">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 联系表单 -->
+                <div class="card">
+                    <div class="card-body">
+                        <h2 style="font-size: var(--font-size-xl); font-weight: 600; margin-bottom: var(--spacing-lg);">发送消息</h2>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label class="form-label" for="name">姓名</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="您的姓名" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="email">邮箱</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="your@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="subject">主题</label>
+                                <input type="text" id="subject" name="subject" class="form-control" placeholder="消息主题" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="message">消息内容</label>
+                                <textarea id="message" name="message" class="form-control" placeholder="请输入您的消息内容..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                                </svg>
+                                发送消息
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-text">© 2024 艺术空间. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

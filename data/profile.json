@@ -1,0 +1,28 @@
+{
+  "name": "艺术家",
+  "title": "摄影师 & 画家",
+  "avatar": "./images/avatar.jpg",
+  "description": "热爱摄影与绘画，用镜头捕捉瞬间的美好，用画笔描绘心中的世界。每一幅作品都承载着我对生活的热爱和对美的追求。我相信艺术是连接心灵的桥梁，希望通过我的作品，让更多人感受到生活中的美好与温暖。",
+  "email": "your@your_email.com",
+  "phone": "+86 123 4567 8888",
+  "website": "www.sina.com",
+  "emailjs": {
+    "serviceId": "your_emailjs_serviceID",
+    "adminTemplateId": "template_ID",
+    "publicKey": "your_emailjs_publicKey"
+  },
+  "social": {
+    "wechat": {
+      "enabled": true,
+      "qrcode": "/images/your_wechat_qrcode.png"
+    },
+    "qq": {
+      "enabled": true,
+      "qrcode": "/images/your_qq_qrcode.png"
+    },
+    "weibo": {
+      "enabled": true,
+      "url": "https://weibo.com/your_weibo_account"
+    }
+  }
+}
