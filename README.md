@@ -1,25 +1,25 @@
-# 艺术空间 - 个人摄影绘画作品展示平台
-
-个人摄影绘画作品展示网站，采用纯 HTML + CSS + JavaScript 开发。
+art-gallery 是一个人摄影绘画作品展示网站，采用纯 HTML + CSS + JavaScript 开发。
 
 ## 📦 快速开始
 
 ### 1. 克隆或下载项目
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/yxd810/art-gallery.git
 cd art-gallery
 ```
 
 ### 2. 启动本地服务器
+
+在正式部署之前，你需要对它进行个性化设置，为此，请先在本地启动一个http服务器，例如：
 
 ```bash
 # 使用 Python HTTP 服务器
 python3 -m http.server 5000
 ```
 
-然后在浏览器中访问：`http://localhost:5000`  你应该看到这个作品展示网站的首页面。
-![网站首页](./src/屏幕截图_1_localhost.jpeg "网站首页")
+然后在浏览器中访问：`http://localhost:5000`  你应该看到这个作品展示网站的首页。
+![网站首页](src/snapshot_index.jpg "网站首页")
 不过此时它只展示了一些样例图片和一个假设站长的个人信息。
 
 如何使它成为您的个人作品展示平台，其实非常简单，请按照以下配置步骤执行。
@@ -28,7 +28,7 @@ python3 -m http.server 5000
 
 ### 1. 配置个人信息
 
-个人信息保存在 `art-gallery/data/profile.json` 文件中， 你可以用任何文本编辑器编辑它。下面以Ubuntu系统下的文本编辑器为例。如果你使用 windows 系统， 就用 `notepad.exe  profile.json` 命令。 
+个人信息保存在 `art-gallery/data/profile.json` 文件中， 你可以用任何文本编辑器编辑它。下面以Ubuntu系统下的nano文本编辑器为例。 
 
 ```bash
 cd art-gallery/data/
@@ -72,7 +72,7 @@ nano profile.json
 
 ### 2. 添加作品
 
-你的作品是网站的灵魂，请删除 art-gallery/images/路径下的所有文件，并在其中放置您的作品文件。有两种方式可以做这件事。
+你的作品是网站的灵魂，请删除 art-gallery/images/路径下的所有文件，并在其中放入您的作品。有两种方式可以做这件事。
 
 #### 方法一：使用预处理脚本
 
@@ -102,9 +102,9 @@ nano profile.json
 
 > tips: 
 > 
-> 这种方法有一个前提：你必须安装了python 。如果你的系统没有安装过 python，可以参照[安装Python] （[Welcome to Python.org](https://www.python.org/)）。
+> 使用这种方法有一个好处是你不需要编辑work.json配置文件，但也需要一个前提：你的计算机中必须安装了python 。如果没有安装过 python，可以参照[安装Python] （[Welcome to Python.org](https://www.python.org/)）简单安装一下。
 > 
-> 另外，预处理脚本需要 Pillow 库, 你需要安装它：
+> 另外，预处理脚本需要 Pillow 库, 如果你已经成功安装了python，请执行以下命令：
 > 
 > ```bash
 > pip install Pillow
@@ -115,6 +115,8 @@ nano profile.json
 #### 方法二：手动管理
 
 1. 将图片放入 `images/` 目录
+   你需要将你的作品文件拷贝进 images/ 目录中，在做这项工作前，请先对你的作品文件进行适当的压缩，这样做的好处是减少你服务器的内存占用，加快网站访问速度。具体压缩参数可以参照下面的**预处理脚本功能**一节进行。
+
 2. 编辑 `data/works.json` 添加作品信息：
 
 ```json
@@ -196,12 +198,12 @@ nano profile.json
 ├── js/
 │   └── main.js             # 交互脚本
 ├── images/                 # 压缩后的图片（部署用）
-│   ├── work1.jpg
-│   └── work2.jpg
+│   ├── sample-1.jpg
+│   └── sample-x.jpg
 ├── src/                    # 原始图片目录（预处理用）
 │   └── README.md           # 使用说明
 ├── data/                   # 数据目录
-│    ├── profile.json         # 管理员信息配置文件（站长信息）
+│   ├── profile.json         # 管理员信息配置文件（站长信息）
 │   └── works.json          # 作品元数据
 └── README.md               # 项目说明
 ```
@@ -214,7 +216,7 @@ nano profile.json
 
 1. 将项目推送到 GitHub
 2. 在仓库设置中启用 GitHub Pages
-3. 选择分支为 main/master
+3. 选择分支为 master
 4. 访问 `https://username.github.io/repo-name`
 
 ### Netlify
@@ -275,10 +277,9 @@ CONFIG = {
 
 ### 修改端口
 
-编辑 `.coze` 文件：
 
-```toml
-run = ["python3", "-m", "http.server", "8080"]  # 改为 8080
+```bash
+ python3  -m  http.server  8080    # 将本地服务器监听端口改为 8080
 ```
 
 ## ❓ 常见问题
@@ -310,12 +311,7 @@ A: 备份以下内容：
 
 A: 预处理脚本会将所有图片转换为 JPEG 格式。如需其他格式，请修改 `preprocess.py` 中的 `output_format` 参数。
 
-## 📄 许可证
+##  许可证
 
 MIT License
-
-## 🙏 致谢
-
-本项目采用纯前端技术栈，专注于提供简洁优雅的作品展示体验。
-
 
